@@ -7,7 +7,7 @@ global cwd
 cwd = os.getcwd()
 
 root = Tk()
-root.iconbitmap("rangersmall.ico")
+root.iconbitmap("capsmall.ico")
 root.title('0:40%  1:30%  2:20%  3:10%')
 
 ug                           = ImageTk.PhotoImage(Image.open(cwd + "\\ranges\\ug.png"))
