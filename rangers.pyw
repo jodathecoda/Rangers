@@ -58,8 +58,9 @@ R5=Radiobutton(root, text="SB", variable=bigblinds, value=5, command=call)
 R5.grid(row=4, column=0, sticky=N+E)
 R6=Radiobutton(root, text="PF", variable=bigblinds, value=6, command=call)
 R6.grid(row=5, column=0, sticky=N+E)
-R7=Button(root, text="RD", command = lambda: randomizer())
-R7.grid(row=6, column=0, rowspan=6,sticky=N+E)
+R7=Button(root, text="% RANDOMIZER %", command = lambda: randomizer())
+#R7.grid(row=6, column=0, rowspan=6,columnspan=2,sticky=N+E)
+R7.grid(row=6, column=0, columnspan=2, sticky=N+E+W+S)
 
 
 # A canvas for mouse events and image drawing
@@ -67,6 +68,10 @@ canvas = Canvas(root, height=270, width=280,)
 canvas.grid(column=1, row=0, rowspan=6, sticky=W)
 #canvas.create_image((2, 2), image=pushfold_img, anchor=NW)
 canvas.create_image((0, 1), image=pushfold_img, anchor=NW)
+
+# Configure columns 0 and 1 to expand when the window is resized
+root.columnconfigure(0, weight=1)
+root.columnconfigure(1, weight=1)
 
 # Enter event loop
 root.mainloop()
