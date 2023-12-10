@@ -64,7 +64,7 @@ R7.grid(row=6, column=0, columnspan=2, sticky=N+E+W+S)
 
 
 # A canvas for mouse events and image drawing
-canvas = Canvas(root, height=270, width=280,)
+canvas = Canvas(root, height=450, width=450,)
 canvas.grid(column=1, row=0, rowspan=6, sticky=W)
 #canvas.create_image((2, 2), image=pushfold_img, anchor=NW)
 canvas.create_image((0, 1), image=pushfold_img, anchor=NW)
