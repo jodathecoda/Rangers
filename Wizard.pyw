@@ -8,7 +8,7 @@ cwd = os.getcwd()
 
 root = Tk()
 root.iconbitmap("capsmall.ico")
-root.title('0:40%  1:30%  2:20%  3:10%')
+root.title('0:40%  1:30%  2:20%  3:10% 4+:5% ')
 
 ug                           = ImageTk.PhotoImage(Image.open(cwd + "\\ranges\\ug.png"))
 hj                           = ImageTk.PhotoImage(Image.open(cwd + "\\ranges\\hj.png"))
